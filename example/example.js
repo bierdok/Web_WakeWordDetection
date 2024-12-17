@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Optional: Validate license
   const licenseManager = new LicenseManager();
  //const licenseManager = new window.main.LicenseManager();
-  const licenseKey = 'MTcyODkzOTYwMDAwMA==-Gy0+y3OCG32COKypi/mpT1AYrTlYAz/IvNt1WZ+gVsI=';
+  const licenseKey = "MTczNDY0NTYwMDAwMA==-KyuASkB3Qk5SW/yWSwwzCtnd1nEuIMLPP8BxHWpfQno=";
   const isLicensed = await licenseManager.isLicenseValid(licenseKey);
 
   if (!isLicensed) {
