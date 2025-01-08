@@ -45,7 +45,7 @@ cd example
 
 npm install
 
-npx webpack --config webpack.config.js
+npm run build
 
 # Test it in a browser:
 You can run use https server to test the wake words.
@@ -55,6 +55,8 @@ Here is an example:
 npm install -g http-server
 
 http-server . -p 8080 --ssl --cert cert.pem --key key.pem
+
+or "npm run start"
 
 ## If you do not have cert.pem and/or key.pem: you can create them as follow:
 
