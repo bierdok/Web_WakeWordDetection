@@ -13,7 +13,7 @@ module.exports = {
         test: /\.js$/,
         include: [
           path.resolve(__dirname, 'example.js'),
-          path.resolve(__dirname, 'node_modules/keyword-detection-web'), // Include the library
+          path.resolve(__dirname, 'node_modules/web-wake-word'), // Include the library
         ],
         use: {
           loader: 'babel-loader',
@@ -35,7 +35,7 @@ module.exports = {
           from: 'models', to: 'models' 
         }, 
         { // Copy webassembly file to dist
-          from: path.resolve(__dirname, 'node_modules/keyword-detection-web/dist/d27ca340296764f46a45.wasm'),
+          from: path.resolve(__dirname, 'node_modules/web-wake-word/dist/d27ca340296764f46a45.wasm'),
           to: path.resolve(__dirname, 'dist/[name][ext]'), // Copy WASM file to dist
         }
     ]

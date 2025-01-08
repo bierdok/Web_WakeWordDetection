@@ -1,17 +1,10 @@
 // example/example.js
-import { LicenseManager, KeywordDetector } from 'keyword-detection-web';
+import { KeywordDetector } from 'web-wake-word';
 
 document.addEventListener('DOMContentLoaded', async () => {
-  // Optional: Validate license
-  const licenseManager = new LicenseManager();
  //const licenseManager = new window.main.LicenseManager();
-  const licenseKey = "MTczNDY0NTYwMDAwMA==-KyuASkB3Qk5SW/yWSwwzCtnd1nEuIMLPP8BxHWpfQno=";
-  const isLicensed = await licenseManager.isLicenseValid(licenseKey);
-
-  if (!isLicensed) {
-    alert('Invalid or expired license key.');
-    return;
-  }
+  const licenseKey =
+    "MTczOTU3MDQwMDAwMA==-+2/cH2HBQz3/SsDidS6qvIgc8KxGH5cbvSVM/6qmk3Q=";
 
   // Initialize Keyword Detector
   const threshold = 0.9999;
@@ -38,7 +31,12 @@ document.addEventListener('DOMContentLoaded', async () => {
       bufferCount,
       onKeywordDetected
     );
-  
+    const isLicensed = await keywordDetector.setLicense(licenseKey);
+    if (!isLicensed) {
+      alert('Invalid or expired license key.');
+      return;
+    }
+   
   try {
     await keywordDetector.init();
     statusElement.textContent = 'Models loaded. Listening for keywords...' + modelToUse.replace(/\.onnx$/, '').replace(/_/g, ' ');

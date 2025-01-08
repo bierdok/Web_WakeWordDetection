@@ -1,18 +1,15 @@
 {
-  "name": "keyword-detection-web-example",
-  "version": "1.0.0",
-  "description": "An example app using keyword-detection-web",
+  "name": "web-wake-word-example",
+  "version": "1.0.12",
+  "description": "An example app using web-wake-word",
   "main": "example.js",
   "scripts": {
-    "build": "webpack",
-    "start": "webpack serve --open",
+    "build": "npx webpack --config webpack.config.js",
+    "start": "http-server . -p 8080 --ssl --cert cert.pem --key key.pem",
     "clean": "rm -rf dist"
   },
   "author": "Your Name",
   "license": "MIT",
-  "dependencies": {
-    "keyword-detection-web": "^1.0.2"
-  },
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/preset-env": "^7.14.7",
@@ -20,6 +17,9 @@
     "copy-webpack-plugin": "^9.1.0",
     "webpack": "^5.95.0",
     "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-dev-server": "^4.15.2"
+  },
+  "dependencies": {
+    "web-wake-word": "^1.0.8"
   }
 }
