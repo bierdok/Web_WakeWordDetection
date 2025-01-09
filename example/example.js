@@ -14,8 +14,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const onKeywordDetected = (detected) => {
       if (detected) {
+
         keywordDetector.stopListening();
-        console.log('Keyword detected!');
+
+        console.log('Keyword detected \nprediction: ' + detected.prediction);
+        console.log('cntBuf: ' + detected.cntBuf);
+        console.log('Model: ' + detected.model);
         alert("Keyword detected!");
         keywordDetector.startListening();
       }

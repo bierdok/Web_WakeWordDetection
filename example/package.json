@@ -20,6 +20,6 @@
     "webpack-dev-server": "^4.15.2"
   },
   "dependencies": {
-    "web-wake-word": "^1.0.8"
+    "web-wake-word": "^1.0.9"
   }
 }
