@@ -76,9 +76,15 @@ If you need any help contact us: ofer@davoice.io
 
 ## Links
 
+- **Web / Javascript / JS Wake Word npm package:** https://www.npmjs.com/package/web-wake-word
+- **If you need React-Native wake word: ** https://www.npmjs.com/package/react-native-wakeword
+
 Here are wakeword detection GitHub links per platform:
 
+- **For Python:** https://github.com/frymanofer/Python_WakeWordDetection
+- **Web / JS / Angular / React:** https://github.com/frymanofer/Web_WakeWordDetection/tree/main
 - **For React Native:** [ReactNative_WakeWordDetection](https://github.com/frymanofer/ReactNative_WakeWordDetection)
+- **For Flutter:** [https://github.com/frymanofer/Flutter_WakeWordDetection]
 - **For Android:** [KeywordsDetectionAndroidLibrary](https://github.com/frymanofer/KeywordsDetectionAndroidLibrary)
 - **For iOS framework:** 
   - With React Native bridge: [KeyWordDetectionIOSFramework](https://github.com/frymanofer/KeyWordDetectionIOSFramework)
