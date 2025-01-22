@@ -29,7 +29,17 @@ seamless and intuitive voice-driven user experiences.
 
 ## Features
 
-- **High Accuracy:** Our advanced machine learning models deliver top-notch accuracy.
+## Features
+
+- **High Accuracy:** We have succesfully reached over 99% accurary for all our models. **Here is on of our customer's benchmarks**:
+
+```
+MODEL         DETECTION RATE
+===========================
+DaVoice        0.992481
+Top Player     0.874812
+Third          0.626567
+```
 - **Platforms:** Web, JS, Angular, React etc'
 - **Easy to deploy:** Check out our example to enabled your web app.
 - **Low Latency:** Experience near-instantaneous keyword detection.
@@ -71,12 +81,81 @@ Open a browser with the following URL https://192.168.1.218:8080 <br>
 See that it is working for you.<br>
 Integrate it to your life website/app.<br>
 
+# Wake word generator
+
+## Create your "custom wake word""
+
+In order to generate your custom wake word you will need to:
+
+- **Create wake word mode:**
+    Contact us at info@davoice.io with a list of your desired **"custom wake words"**.
+
+    We will send you corresponding models typically your **wake word phrase .onnx** for example:
+
+    A wake word ***"hey sky"** will correspond to **hey_sky.onnx**.
+
+- **Add wake words to javascript project:**
+    Simply copy the new onnx files to models directory make sure this directory it copied to the targer such as "dist/model".
+
+- **In JS code add the new onnx files to your configuration**
+In example.js change
+```
+    const modelToUse = "need_help_now.onnx";
+```
+
+To
+
+```
+    const modelToUse = "hey_sky.onnx"; // or your_model.onnx
+```
+
 ## Contact us
 If you need any help contact us: ofer@davoice.io
 
+
+### Key words
+
+DaVoice.io javascript "Voice commands" "Wake words" "Voice to Intent" "keyword detection".
+"Wake word detection github"
+"Wake Word" 
+"keyword detection"
+"Phrase Recognition"
+"Phrase Spotting"
+“Voice triggered”
+“hot word”
+“trigger word”
+"react.js wake word",
+"Angular wake word",
+"js wake word",
+"javascript wake word",
+"angular wake word",
+"Vue.js wake word",
+"Wake word detection github",
+"Wake word generator",
+"Custom wake word",
+"voice commands",
+"wake word",
+"wakeword",
+"wake words",
+"keyword detection",
+"keyword spotting",
+"speech to intent",
+"voice to intent",
+"phrase spotting",
+"react native wake word",
+"Davoice.io wake word",
+"Davoice wake word",
+"Davoice react native wake word",
+"Davoice react-native wake word",
+"wake",
+"word",
+"Voice Commands Recognition",
+"lightweight Voice Commands Recognition",
+"customized lightweight Voice Commands Recognition",
+
 ## Links
 
-- **Web / Javascript / JS Wake Word npm package:** https://www.npmjs.com/package/web-wake-word
+- **Web / Javascript / React.JS / Angula / Vue.js Wake Word npm package:** https://www.npmjs.com/package/web-wake-word
 - **If you need React-Native wake word: ** https://www.npmjs.com/package/react-native-wakeword
 
 Here are wakeword detection GitHub links per platform:
