@@ -35,7 +35,7 @@ module.exports = {
           from: 'models', to: 'models' 
         }, 
         { // Copy webassembly file to dist
-          from: path.resolve(__dirname, 'node_modules/web-wake-word/dist/d27ca340296764f46a45.wasm'),
+          from: 'node_modules/web-wake-word/dist/50be9f91026bda8b3ca4.wasm',
           to: path.resolve(__dirname, 'dist/[name][ext]'), // Copy WASM file to dist
         }
     ]
