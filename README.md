@@ -26,9 +26,6 @@ Speech to Intent is often triggered after a wake word activates the app, making 
 component of more advanced voice-controlled applications. This layered approach allows for
 seamless and intuitive voice-driven user experiences.
 
-
-## Features
-
 ## Features
 
 - **High Accuracy:** We have succesfully reached over 99% accurary for all our models. **Here is on of our customer's benchmarks**:
@@ -75,6 +72,23 @@ nopenssl genrsa -out key.pem 2048
 nopenssl req -new -key key.pem -out csr.pem
 
 nopenssl x509 -req -days 365 -in csr.pem -signkey key.pem -out cert.pem
+
+# Using specific path to wasm file:
+
+If you need to the wasm file path, you can add another variable to KeywordDetector constructor.
+
+Below is an example of adding path to chrome extension path:
+
+```
+const keywordDetector = new KeywordDetector(
+  modelsPath,
+  'model.onnx',
+  threshold,
+  bufferCount,
+  onKeywordDetected,
+  'chrome-extension://<EXT_ID>/assets/wasm/'
+);
+```
 
 ### Next steps
 Open a browser with the following URL https://192.168.1.218:8080 <br>
