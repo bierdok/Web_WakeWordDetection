@@ -13,7 +13,7 @@ Welcome to **Davoice Wake Words** – the premier Wake Words / keyword detection
 
 ## About this project
 
-This is a **"wake word"** package for React.js, Javascript, Angular, Vue.js, Svelte, Next.js, Nuxt.js, Gatsby, Ember.js, Backbone.js and Mithril.js. A wake word is a keyword that activates your device, like "Hey Siri" or "OK Google". "Wake Word" is also known as "keyword detection", "Phrase Recognition", "Phrase Spotting", “Voice triggered”, “hot word”, “trigger word”
+This is a **"wake word"** package for React.js, Javascript, Angular, Vue.js, Svelte, Next.js, Nuxt.js, Gatsby, Ember.js, Backbone.js and Mithril.js. A wake word is a keyword that activates your device, like "Hey Siri" or "OK Google". "Wake Word" is also known as "keyword detection", "Phrase Recognition", "Phrase Spotting", “Voice triggered”, “hotword”, “trigger word”
 
 It also provide **Speech to Intent**. **Speech to Intent** refers to the ability to recognize a spoken word or phrase
 and directly associate it with a specific action or operation within an application. Unlike a **"wake word"**, which typically serves to activate or wake up the application,
@@ -136,7 +136,7 @@ DaVoice.io javascript "Voice commands" "Wake words" "Voice to Intent" "keyword d
 "Phrase Recognition"
 "Phrase Spotting"
 “Voice triggered”
-“hot word”
+“hotword”
 “trigger word”
 "react.js wake word",
 "Angular wake word",
