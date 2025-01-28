@@ -33,7 +33,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       modelToUse,
       threshold,
       bufferCount,
-      onKeywordDetected
+      onKeywordDetected,
+      "./dist/"
     );
     const isLicensed = await keywordDetector.setLicense(licenseKey);
     if (!isLicensed) {
