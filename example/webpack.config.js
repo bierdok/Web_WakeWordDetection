@@ -37,6 +37,10 @@ module.exports = {
         { // Copy webassembly file to dist
           from: 'node_modules/web-wake-word/dist/ort-wasm-simd-threaded.wasm',
           to: path.resolve(__dirname, 'dist/[name][ext]'), // Copy WASM file to dist
+        },
+        { // Copy webassembly file to dist
+          from: 'node_modules/web-wake-word/dist/audio-worklet-processor.js',
+          to: path.resolve(__dirname, 'dist/[name][ext]'), // Copy WASM file to dist
         }
     ]
     }),
