@@ -31,12 +31,17 @@ seamless and intuitive voice-driven user experiences.
 - **High Accuracy:** We have succesfully reached over 99% accurary for all our models. **Here is on of our customer's benchmarks**:
 
 ```
+** Benmark used recordings with 1326 TP files.
+** Second best was on of the industry top players who detected 1160 TP 
+** Third  detected TP 831 out of 1326
+
 MODEL         DETECTION RATE
 ===========================
-DaVoice        0.992481
-Top Player     0.874812
-Third          0.626567
+DaVoice        0.992458
+Top Player     0.874811
+Third          0.626697
 ```
+
 - **Platforms:** Web, JS, Angular, React etc'
 - **Easy to deploy:** Check out our example to enabled your web app.
 - **Low Latency:** Experience near-instantaneous keyword detection.
