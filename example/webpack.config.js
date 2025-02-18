@@ -1,5 +1,6 @@
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
   entry: './example.js', // Entry point for your example
@@ -29,6 +30,9 @@ module.exports = {
     ],
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env.LICENSE_KEY': JSON.stringify(process.env.LICENSE_KEY),
+    }),
     new CopyWebpackPlugin({
       patterns: [
         { // Copy models to 'dist/models'

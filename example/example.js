@@ -2,11 +2,11 @@
 import { KeywordDetector } from 'web-wake-word';
 import path from 'path-browserify';
 
-path.join("./", "./");
 document.addEventListener('DOMContentLoaded', async () => {
  //const licenseManager = new window.main.LicenseManager();
-  const licenseKey =
-    "MTczOTU3MDQwMDAwMA==-+2/cH2HBQz3/SsDidS6qvIgc8KxGH5cbvSVM/6qmk3Q=";
+  // Read the license key from the file
+  const licenseKey = process.env.LICENSE_KEY || "DEFAULT_LICENSE_KEY";
+  console.log('License Key:', licenseKey);
 
   // Initialize Keyword Detector
   const threshold = 0.9999;
