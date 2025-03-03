@@ -57,7 +57,7 @@ const keywordDetector = new KeywordDetector("path/to/models", modelParamsArr, ".
      
     const modelParamsArr = [
       { modelToUse: "need_help_now.onnx", threshold: threshold, bufferCount: bufferCount, onKeywordDetected: onKeywordDetected },
-      { modelToUse: "salut_mia_model_28_20012025.onnx", threshold: threshold, bufferCount: bufferCount, onKeywordDetected: onKeywordDetected },
+      //{ modelToUse: "salut_mia_model_28_20012025.onnx", threshold: threshold, bufferCount: bufferCount, onKeywordDetected: onKeywordDetected },
     ];
     
     const keywordDetector = new KeywordDetector(modelsFolderPath, modelParamsArr, "./dist/", "./dist/");
